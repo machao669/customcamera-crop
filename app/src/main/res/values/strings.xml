@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Camera</string>
+    <!--camera-->
+    <string name="camera_not_found">您的相机失踪了</string>
+    <string name="camera_forbidden">您的相机被禁用了,快去设置开启吧</string>
+    <string name="camera_hint_vertical">请竖屏拍照\n解答文字与本文平行等大</string>
+    <string name="camera_hint_horizontal">请横屏拍照\n题目文字与本文平行等大</string>
+</resources>

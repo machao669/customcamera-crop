@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_take_image"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <com.machao.camera.customerview.CameraPreview
+        android:id="@+id/surface_camera"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <com.machao.camera.customerview.FocusView
+        android:id="@+id/fv_camera_focus"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerInParent="true"/>
+
+    <com.machao.camera.customerview.CameraDivideView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <TextView
+        android:id="@+id/tv_takepoton_text_example_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:rotation="90"
+        android:text="@string/camera_hint_horizontal"
+        android:textColor="#ccffffff"
+        android:textSize="17sp"
+        android:visibility="invisible"
+        />
+
+    <TextView
+        android:id="@+id/tv_takepoton_text_example_horizontal_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:rotation="-90"
+        android:text="@string/camera_hint_horizontal"
+        android:textColor="#ccffffff"
+        android:textSize="17sp"
+        android:visibility="invisible"
+        />
+
+    <TextView
+        android:id="@+id/tv_takepoton_text_example_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="120dp"
+        android:gravity="center"
+        android:text="@string/camera_hint_vertical"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="@dimen/activity_horizontal_margin"
+        >
+
+        <ImageView
+            android:id="@+id/btn_take_exit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/close_selector"
+            />
+
+        <ImageView
+            android:id="@+id/btn_take_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/camera_take_selector"
+            />
+
+        <TextView
+            android:id="@+id/tv_take_album"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/shape_album_text_bg"
+            android:gravity="center"
+            android:textColor="@color/white"
+            />
+    </RelativeLayout>
+</RelativeLayout>
