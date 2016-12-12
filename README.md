@@ -1,9 +1,10 @@
 ### 自定义相机 + 裁剪的 demo
 
 #### 用到的三方库：
-    zxing的部分代码，主要是相机的设置和扫描时获取帧数据
-    裁剪库是在[cropper](https://github.com/edmodo/cropper)修改而来，主要是修改了样式，添加了旋转功能，及修复部分bug
-    其他的库可以在build.gradle中查看
+
+zxing的部分代码，主要是相机的设置和扫描时获取帧数据
+裁剪库是在[cropper](https://github.com/edmodo/cropper)修改而来，主要是修改了样式，添加了旋转功能，及修复部分bug
+其他的库可以在build.gradle中查看
 
 #### 配置使用：
     拍照页面默认是横屏，不开启手机方向感应的
